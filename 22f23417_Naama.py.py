@@ -97,6 +97,14 @@ def classify_job_posting(sector_code, vacancies, applications, experience_years)
 
 
 def calculate_hiring_rate(total_vacancies, filled_positions):
+    """
+    Calculate the hiring rate percentage for a sector.
+    Args:
+        total_vacancies (int): Total number of job vacancies available.
+        filled_positions (int): Number of positions successfully filled.
+    Returns:
+        tuple: (hiring_rate float, quality_label str)
+    """
     """Calculate and evaluate sector hiring rate."""
     if total_vacancies == 0:
         return 0.0, "No data available"
