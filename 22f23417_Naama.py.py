@@ -23,6 +23,8 @@ def get_sector_name(sector_code):
 
 
 def classify_job_posting(sector_code, vacancies, applications, experience_years):
+    if vacancies < 0 or applications < 0:
+        raise ValueError("Inputs must be non-negative integers")
     """
     Classify a job posting and compute hiring metrics.
 
