@@ -46,7 +46,7 @@ def classify_job_posting(sector_code, vacancies, applications, experience_years)
         base_salary = 35000
     elif sector_code == 5:
         sector = "Manufacturing"
-        base_salary = 40000
+        base_salary = 42000
     else:
         sector = "Unknown Sector"
         base_salary = 30000
