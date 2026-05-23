@@ -61,12 +61,15 @@ def classify_job_posting(sector_code, vacancies, applications, experience_years)
     elif experience_years < 6:
         level = "Mid-Level"
         salary_multiplier = 1.35
-    elif experience_years < 10:
-        level = "Senior"
-        salary_multiplier = 1.60
+   elif experience_years < 10:
+    level = "Senior"
+    salary_multiplier = 1.60
+    elif experience_years < 12:
+    level = "Very Senior"
+    salary_multiplier = 1.75
     else:
-        level = "Expert / Lead"
-        salary_multiplier = 1.90
+    level = "Expert / Lead"
+    salary_multiplier = 1.90
 
     estimated_salary = base_salary * salary_multiplier
 
